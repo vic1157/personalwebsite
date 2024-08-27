@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/pset8-redo/styling.css">
+	<title>Personal Finance Project</title>
+    <style>
+        .project-image {
+            max-height: 400px;
+            object-fit: cover;
+        }
+        .tech-badge {
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+
+
+<body>
+     <!-- Navbar -->
+	 <div class="container-fluid justify-content-center border-bottom border-black">
+		<nav class="navbar navbar-expand-md bg-white">
+			<div class="container-md">
+				<!-- Navbar Brand -->
+				<a class="navbar-brand mb-0 h1 ps-3" href="home.html">
+					<span> Oluwasanmi Ariyo </span>
+				</a>
+  
+				<!-- Navbar Button that allows you to collapse -->
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				  </button>
+  
+				<div class="collapse navbar-collapse justify-content-end text-center" id="navbarSupportedContent">
+					<ul class="navbar-nav nav-underline">
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="home.html"> About </a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="projects.html"> Projects </a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="resume.html"> Resume </a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="mailto:ariyo90@gmail.com"> Contact </a>
+						</li>
+					</ul>
+				</div>
+  
+			</div>
+		</nav>
+	</div>
+
+	<!-- Body -->
+	<section class="border-top border-bottom border-black bg-light">
+		<main class="container my-5 ">
+			<h1 class="mb-4">Personal Finance</h1>
+			<div class="border border-black my-4 border-2">
+				<div class="row pt-4">
+					<div class="col-md-7 px-4 mb-5 d-flex align-items-center">
+						<img src="/pset8-redo/assets/Screenshot 2024-08-26 at 11.00.23 AM.png" alt="Project Screenshot" class="img-fluid rounded project-image border border-black">
+					</div>
+					<div class="col-md-5 px-4">
+						<div>
+							<h3>Project Overview</h3>
+							<p class="p-1">
+								Project allows users to upload CSV files of credit card and bank statements to calculate expenses in a given month.
+							</p>
+						</div>
+						<div class="mt-5">
+							<h4 class="mb-3">Technologies Used</h4>
+							<div class="">
+								<span class="badge bg-success me-2 mb-2 tech-badge">Python</span>
+							<!--  
+								<span class="badge bg-info me-2 mb-2 tech-badge">JavaScript</span>
+								<span class="badge bg-warning me-2 mb-2 tech-badge">React</span>
+								<span class="badge bg-danger me-2 mb-2 tech-badge">Node.js</span>
+							-->
+							</div>
+							<div class="mt-4">
+								<a href="#" class="btn btn-primary me-2 mb-2">View Live Demo</a>
+								<a href="#" class="btn btn-secondary mb-2">View Source Code</a>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+	
+				<div class="row p-4 my-4">
+					<div class="col-md-8">
+						<h3>Detailed Description</h3>
+						<div class="px-1">
+							<p>
+								Overall, different people manage money in different ways. I prefer to be granular with data to ensure that I remain proactive with budgeting vs. taking a more passive approach.
+							</p>
+							<p>
+								This project was inspired by my desire to maintain the quality of my accounting while facing the time constraints that life brings. I found myself so busy in April 2023, that after I missed that month, I never documented my expenses for the remainder of the year. For context, my original accounting process involves reviewing statements from my bank and credit cards (MANUALLY) to document expenses and net income at the end of the month. Doing this would take 1.5-3 hours every month, based on my spending activity.
+							</p>
+							<p>
+								Faced with an excessive backlog, I understood catching up would require several hours that I didn't have. But I understood that I could export bank/credit card statements in CSV format and import them into this program. Not having to copy/paste transactions and semi-automate my budgeting workflow while remaining proactive made implementing this script a no-brainer.
+							</p>
+						</div>
+						<h3 class="pt-3">Key Features</h3>
+						<ul class="d-grid gap-1">
+							<li> <span class="fw-bold"> Feature 1:</span> CSV Processing of Bank/Credit Card Statement </li>
+							<li><span class="fw-bold"> Feature 2:</span> Ability to re-name transactions (ex. Fidelity Investments appears as 'ACH DEBIT FID BKG SVC LLC') </li>
+							<li><span class="fw-bold"> Feature 3:</span> Ability to categorize transactions (Investments, Travel, Food, Home, Misc, Crypto) - feel to update the 'MonthlyBudget' class to include categories of your preference </li>
+							<li><span class="fw-bold"> Feature 4:</span> Monthly Spending Report (Total Expenses / Cash Saved / Net Worth - explained above) </li>
+						</ul>
+		
+						<h3 class="pt-3">Future Improvements</h3>
+						<p>This project is currently backend-only, meaning that the utility of this project is less accessible compared to integrating a cohesive frontend. Looking to: a. Develop a more-robust backend with user accounts and authenitications and b. Implement a front-end to complement the backend. </p>
+					</div>
+					<div class="col-md-4">
+						<div class="mb-5">
+							<h3>Project Timeline</h3>
+							<ul class="list-group">
+								<li class="list-group-item"> <span class="fw-bold">Project Start:</span>  May 2nd, 2024</li>
+								<li class="list-group-item"> <span class="fw-bold">MVP Release:</span>  N/A</li>
+								<li class="list-group-item"> <span class="fw-bold">Current Version:</span> 1.0</li>
+								<li class="list-group-item"> <span class="fw-bold">Last Updated:</span> June 22nd, 2024</li>
+							</ul>
+						</div>
+						
+		
+						<h3 class="mt-4">Collaborators</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><span class="fw-bold">Oluwasanmi Ariyo</span> - Lead Developer</li>
+							<li class="list-group-item"><span class="fw-bold">Collaborator 1</span> - N/A</li>
+							<li class="list-group-item"><span class="fw-bold">Collaborator 2</span> - N/A</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</main>
+	</section>
+    
+    <!-- Footer -->
+	<footer class="border-top border-black">
+		<div class="container my-3">
+			<div class="row mx-1 align-items-center">
+				<div class="col-md-6 col-12 text-md-start text-center">
+					<span class="fs-6 text-secondary"> Oluwasanmi Ariyo &copy; 2024 </span>
+				</div>
+				<div class="col-md-6 col-12 mt-1">
+					<div class="justify-content-end text-md-end text-center text-end">
+						<a class="mx-1 icon fs-5" href="https://www.linkedin.com/in/oluwasanmi-ariyo-632640b2" target="_blank" rel="noopener noreferrer" style="color:#0077b5; text-decoration: none;">
+							<i class="bi bi-linkedin"></i>
+						</a>
+						<a class="mx-1 icon fs-6" href="mailto:ariyo90@gmail.com" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+							<iconify-icon icon="logos:google-gmail"></iconify-icon>
+						</a>
+						<a class="mx-1 icon fs-5" href="https://github.com/vic1157" target="_blank" rel="noopener noreferrer" style="color:black; text-decoration: none;">
+							<i class="bi bi-github"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+	<script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+</body>
+</html>
