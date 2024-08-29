@@ -58,28 +58,26 @@
 	<!-- Body -->
 	<section class="border-top border-bottom border-black bg-light">
 		<main class="container my-5 ">
-			<h1 class="mb-4">Stock Simulator (CS50) </h1>
+			<h1 class="mb-4">Stock Simulator</h1>
 			<div class="border border-black my-4 border-2">
 				<div class="row pt-4">
 					<div class="col-md-7 px-4 mb-5 d-flex align-items-center">
-						<img src="Assets/financial_report.png" alt="Project Screenshot" class="img-fluid rounded project-image border border-black">
+						<img src="Assets/stock_simulator.png" alt="Project Screenshot" class="img-fluid rounded project-image border border-black">
 					</div>
 					<div class="col-md-5 px-4">
 						<div>
 							<h3>Project Overview</h3>
 							<p class="p-1">
-								Project allows users to upload CSV files of credit card and bank statements to calculate expenses in a given month.
+								Webapp that leverages the IEX API to pull real-time prices of stocks. Starts users with $10k of capital to practice trading skills.
 							</p>
 						</div>
 						<div class="mt-5">
 							<h4 class="mb-3">Technologies Used</h4>
 							<div class="">
-								<span class="badge bg-success me-2 mb-2 tech-badge">Python</span>
-							<!--  
-								<span class="badge bg-info me-2 mb-2 tech-badge">JavaScript</span>
-								<span class="badge bg-warning me-2 mb-2 tech-badge">React</span>
-								<span class="badge bg-danger me-2 mb-2 tech-badge">Node.js</span>
-							-->
+								<span class="badge bg-success me-2 mb-2 tech-badge">Flask (Python) </span>
+								<span class="badge bg-info me-2 mb-2 tech-badge">Jinja</span>
+								<span class="badge bg-danger me-2 mb-2 tech-badge">Javascript</span>
+								<span class="badge bg-warning me-2 mb-2 tech-badge">Bootstrap</span>
 							</div>
 							<div class="mt-4">
 								<a href="https://github.com/vic1157/personalfinance/blob/main/init_pfinance.py" class="btn btn-secondary mb-2">View Source Code</a>
@@ -94,13 +92,17 @@
 						<h3>Detailed Description</h3>
 						<div class="px-1">
 							<p>
-								Overall, different people manage money in different ways. I prefer to be granular with data to ensure that I remain proactive with budgeting vs. taking a more passive approach.
+								The stock market is the apotheosis of the global financial system. Investors are able to gain ownership in promising companies and influence company direction depending on the amount and types of shares that one owns. While a belief in a company can serve as a catalyst in purchasing a stock, there are other variables that an investor should consider before purchasing a share in a company, such as:
 							</p>
+							<ol class="d-grid gap-1">
+								<li> The stock’s price history and trajectory </li>
+								<li>The earnings report of a company </li>
+								<li> Consumer confidence in company and industry that company resides </li>
+								<li> Expansion plans and opportunities for growth </li>
+								<li> Competition in industry or emerging startups </li>
+							</ol>
 							<p>
-								This project was inspired by my desire to maintain the quality of my accounting while facing the time constraints that life brings. I found myself so busy in April 2023, that after I missed that month, I never documented my expenses for the remainder of the year. For context, my original accounting process involves reviewing statements from my bank and credit cards (MANUALLY) to document expenses and net income at the end of the month. Doing this would take 1.5-3 hours every month, based on my spending activity.
-							</p>
-							<p>
-								Faced with an excessive backlog, I understood catching up would require several hours that I didn't have. But I understood that I could export bank/credit card statements in CSV format and import them into this program. Not having to copy/paste transactions and semi-automate my budgeting workflow while remaining proactive made implementing this script a no-brainer.
+								Different individuals share various investing strategies (diversification, blue chip stocks, index funds, mutual funds, buying what you believe in, penny stock, etc) that can either lead the to an <span class="text-decoration-underline"> abundance of wealth </span> or <span class="text-decoration-underline"> financial peril</span>. <span class="fw-bold"> Regardless of your strategy and conviction of a stock, it is best to test if you can put your money where your mouth is. </span>
 							</p>
 						</div>
 						<h3 class="pt-3">Key Features</h3>
