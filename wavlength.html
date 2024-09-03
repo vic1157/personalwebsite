@@ -6,7 +6,7 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styling.css">
-	<title>Personal Finance Project</title>
+	<title>Wavlength</title>
     <style>
         .project-image {
             max-height: 400px;
@@ -61,10 +61,55 @@
 			<h1 class="mb-4"> Wavlength </h1>
 			<div class="border border-black my-4 border-2">
 				<div class="row pt-4">
-					<div class="col-md-7 px-4 mb-5 d-flex align-items-center">
-						<img src="Assets/financial_report.png" alt="Project Screenshot" class="img-fluid rounded project-image border border-black">
+					<div class="col-md-7 ps-4 ms-3 mb-5 d-flex align-items-center">
+						<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+							<div class="carousel-indicators">
+							  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+							  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+							  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+							  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+							  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+							  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+							  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+							  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+							</div>
+							<div class="carousel-inner">
+							  <div class="carousel-item active">
+								<img src="Assets/Wav1.png" class="d-block w-100" alt="...">
+							  </div>
+							  <div class="carousel-item">
+								<img src="Assets/Wav2.png" class="d-block w-100" alt="...">
+							  </div>
+							  <div class="carousel-item">
+								<img src="Assets/Wav3.png" class="d-block w-100" alt="...">
+							  </div>
+							  <div class="carousel-item">
+								<img src="Assets/Wav4.png" class="d-block w-100" alt="...">
+							  </div>
+							  <div class="carousel-item">
+								<img src="Assets/Wav5.png" class="d-block w-100" alt="...">
+							  </div>
+							  <div class="carousel-item">
+								<img src="Assets/Wav6.png" class="d-block w-100" alt="...">
+							  </div>
+							  <div class="carousel-item">
+								<img src="Assets/Wav7.png" class="d-block w-100" alt="...">
+							  </div>
+							  <div class="carousel-item">
+								<img src="Assets/Wav8.png" class="d-block w-100" alt="...">
+							  </div>
+							</div>
+							<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+							  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							  <span class="visually-hidden">Previous</span>
+							</button>
+							<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+							  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+							  <span class="visually-hidden">Next</span>
+							</button>
+						  </div>
 					</div>
-					<div class="col-md-5 px-4">
+					<div class="col-md-4 px-4">
 						<div>
 							<h3>Project Overview</h3>
 							<p class="p-1">
@@ -88,33 +133,49 @@
 						<h3>Detailed Description</h3>
 						<div class="px-1">
 							<p>
-								Overall, different people manage money in different ways. I prefer to be granular with data to ensure that I remain proactive with budgeting vs. taking a more passive approach.
+								Wavlength is a customer relationship management (CRM) and productivity platform designed to empower freelance designers by streamlining lead generation and project management processes. This platform enables designers to showcase their portfolios and service offerings through customizable online profiles that can be easily shared across various digital channels, including social media and custom links.
 							</p>
 							<p>
-								This project was inspired by my desire to maintain the quality of my accounting while facing the time constraints that life brings. I found myself so busy in April 2023, that after I missed that month, I never documented my expenses for the remainder of the year. For context, my original accounting process involves reviewing statements from my bank and credit cards (MANUALLY) to document expenses and net income at the end of the month. Doing this would take 1.5-3 hours every month, based on my spending activity.
+								Wavlength primarily focuses on entry-level freelance designers who possess the creative skills to succeed commercially but may lack the business acumen necessary to scale their operations. Many freelancers struggle to maintain a successful business due to the time-consuming nature of essential tasks such as marketing, negotiation, and project management.
 							</p>
 							<p>
-								Faced with an excessive backlog, I understood catching up would require several hours that I didn't have. But I understood that I could export bank/credit card statements in CSV format and import them into this program. Not having to copy/paste transactions and semi-automate my budgeting workflow while remaining proactive made implementing this script a no-brainer.
+								With the freelance workforce projected to exceed 50% of the total workforce by 2025, there is a growing need for tools and platforms that empower freelancers to succeed in their ventures. Wavlength aims to bridge this gap by providing a comprehensive solution that addresses the unique challenges faced by freelance designers.
 							</p>
 						</div>
 						<h3 class="pt-3">Key Features</h3>
 						<ul class="d-grid gap-1">
-							<li> <span class="fw-bold"> Feature 1:</span> CSV Processing of Bank/Credit Card Statement </li>
-							<li><span class="fw-bold"> Feature 2:</span> Ability to rename transactions (ex. Fidelity Investments appears as 'ACH DEBIT FID BKG SVC LLC') </li>
-							<li><span class="fw-bold"> Feature 3:</span> Ability to categorize transactions (Investments, Travel, Food, Home, Misc, Crypto) - feel to update the 'MonthlyBudget' class to include categories of your preference </li>
-							<li><span class="fw-bold"> Feature 4:</span> Monthly Spending Report (Total Expenses / Cash Saved / Net Worth - explained above) </li>
+							<li> <span class="fw-bold"> Lead Generation</span>
+								<ul>
+									<li>Potential clients can view a designer's profile, which highlights their portfolio and the plans or services they offer. Clients can then submit detailed project proposals, specifying their requirements, budget, and desired timeline.</li>
+								</ul>
+							</li>
+							<li> <span class="fw-bold"> Proposal Management</span>
+								<ul>
+									<li>Designers can access a dedicated portal to review and manage incoming project proposals. They have the option to accept or decline proposals based on their availability and interest in the project.</li>
+								</ul>
+							</li>
+							<li> <span class="fw-bold"> Secure Payments</span>
+								<ul>
+									<li>Once a designer accepts a proposal, the client verifies the project details and makes an upfront payment, ensuring financial security for both parties.</li>
+								</ul>
+							</li>
+							<li> <span class="fw-bold"> Project Management</span>
+								<ul>
+									<li>After payment, the client is redirected to a project portal where they can track the progress of their project in real-time and communicate directly with the designer..</li>
+								</ul>
+							</li>
 						</ul>
 		
 						<h3 class="pt-3">Future Improvements</h3>
-						<p>This project is currently backend-only, meaning that the utility of this project is less accessible compared to integrating a cohesive frontend. Looking to: a. Develop a more-robust backend with user accounts and authentication and b. Implement a front-end to complement the backend. </p>
+						<p>Wavlength is no longer in production. If the team were to enhance the platform, we would leverage crypto payments to enhance the transaction experience. Majority of the designers on the platform were from various parts of the world and one of the biggest issues that we encountered was getting access to a global payment processor that would accommodate all of our designers.  </p>
 					</div>
 					<div class="col-md-4">
 						<div class="mb-5">
 							<h3 class="pt-3">Project Timeline</h3>
 							<ul class="list-group">
-								<li class="list-group-item"> <span class="fw-bold">Project Start:</span>  May 2nd, 2024</li>
-								<li class="list-group-item"> <span class="fw-bold">MVP Release:</span>  N/A</li>
-								<li class="list-group-item"> <span class="fw-bold">Current Version:</span> 1.0</li>
+								<li class="list-group-item"> <span class="fw-bold">Project Start:</span>  Jan 15th, 2020</li>
+								<li class="list-group-item"> <span class="fw-bold">MVP Release:</span>  May 21st, 2020</li>
+								<li class="list-group-item"> <span class="fw-bold">Current Version:</span> 2.3</li>
 								<li class="list-group-item"> <span class="fw-bold">Last Updated:</span> June 22nd, 2024</li>
 							</ul>
 						</div>
@@ -122,9 +183,8 @@
 		
 						<h3 class="mt-4">Collaborators</h3>
 						<ul class="list-group">
-							<li class="list-group-item"><span class="fw-bold">Oluwasanmi Ariyo</span> - Lead Developer</li>
-							<li class="list-group-item"><span class="fw-bold">Collaborator 1</span> - N/A</li>
-							<li class="list-group-item"><span class="fw-bold">Collaborator 2</span> - N/A</li>
+							<li class="list-group-item"> <a href="https://www.linkedin.com/in/oluwasanmi-ariyo" style="text-decoration: none;" > <span class="fw-bold">Oluwasanmi Ariyo</span></a> - TPM</li>
+							<li class="list-group-item"> <a href="https://in.linkedin.com/in/ashwal-dixit-48488419" style="text-decoration: none;" > <span class="fw-bold">Ashwal Dixit</span></a> - Lead Developer</li>
 						</ul>
 					</div>
 				</div>

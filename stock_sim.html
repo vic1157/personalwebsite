@@ -6,7 +6,7 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styling.css">
-	<title>Personal Finance Project</title>
+	<title>Stock Simulator</title>
     <style>
         .project-image {
             max-height: 400px;
@@ -68,7 +68,7 @@
 						<div>
 							<h3>Project Overview</h3>
 							<p class="p-1">
-								Webapp that leverages the IEX API to pull real-time prices of stocks. Starts users with $10k of capital to practice trading skills.
+								Webapp that leverages the IEX API to pull real-time prices of stocks. Users start with $10k of capital to practice trading skills. Based on CS50's Finance problemset.
 							</p>
 						</div>
 						<div class="mt-5">
@@ -80,7 +80,7 @@
 								<span class="badge bg-warning me-2 mb-2 tech-badge">Bootstrap</span>
 							</div>
 							<div class="mt-4">
-								<a href="https://github.com/vic1157/personalfinance/blob/main/init_pfinance.py" class="btn btn-secondary mb-2">View Source Code</a>
+								<a href="https://github.com/vic1157/stocksimulator/blob/main/app.py" class="btn btn-secondary mb-2">View Source Code</a>
 							</div>
 						</div>
 						
@@ -107,32 +107,35 @@
 						</div>
 						<h3 class="pt-3">Key Features</h3>
 						<ul class="d-grid gap-1">
-							<li> <span class="fw-bold"> Feature 1:</span> CSV Processing of Bank/Credit Card Statement </li>
-							<li><span class="fw-bold"> Feature 2:</span> Ability to rename transactions (ex. Fidelity Investments appears as 'ACH DEBIT FID BKG SVC LLC') </li>
-							<li><span class="fw-bold"> Feature 3:</span> Ability to categorize transactions (Investments, Travel, Food, Home, Misc, Crypto) - feel to update the 'MonthlyBudget' class to include categories of your preference </li>
-							<li><span class="fw-bold"> Feature 4:</span> Monthly Spending Report (Total Expenses / Cash Saved / Net Worth - explained above) </li>
+							<li><span class="fw-bold"> Feature 1:</span> Register User (new user creates profile for app)</li>
+							<li><span class="fw-bold"> Feature 2:</span> Quote (user searches for stock info)</li>
+							<li><span class="fw-bold"> Feature 3:</span> Buy (user buys stock)</li>
+							<li><span class="fw-bold"> Feature 4:</span> Index (HTML table summarizing owned shares)</li>
+							<li><span class="fw-bold"> Feature 5:</span> Sell (Sell stock(s) that user owns)</li>
+							<li><span class="fw-bold"> Feature 6:</span> Password Change (for login)</li>
+							<li><span class="fw-bold"> Feature 7:</span> Add Additional Cash (to total cash balance) </li>
+							<li><span class="fw-bold"> Feature 8:</span> Allow Users To Buy/Sell Shares Directly From Portfolio Page (vs buying/selling from dedicated HTML pages) </li>
+							<li><span class="fw-bold"> Feature 9:</span> Password REGEX Criteria (PW must be a certain length, have a capital letter, and special character)  </li>
 						</ul>
 		
 						<h3 class="pt-3">Future Improvements</h3>
-						<p>This project is currently backend-only, meaning that the utility of this project is less accessible compared to integrating a cohesive frontend. Looking to: a. Develop a more-robust backend with user accounts and authentication and b. Implement a front-end to complement the backend. </p>
+						<p>If I were to improve this application, I would add more visual elements. For example, when you search for information about a stock, I would showcase a graph depicitng its performance based on various time periods (which you can filter). In addition, I would add the same visual element to the portfolio screen to give users insight on how well their portfolio has performed over a specific period. </p>
 					</div>
 					<div class="col-md-4">
 						<div class="mb-5">
 							<h3 class="pt-3">Project Timeline</h3>
 							<ul class="list-group">
-								<li class="list-group-item"> <span class="fw-bold">Project Start:</span>  May 2nd, 2024</li>
+								<li class="list-group-item"> <span class="fw-bold">Project Start:</span>  Feb 2nd, 2024</li>
 								<li class="list-group-item"> <span class="fw-bold">MVP Release:</span>  N/A</li>
 								<li class="list-group-item"> <span class="fw-bold">Current Version:</span> 1.0</li>
-								<li class="list-group-item"> <span class="fw-bold">Last Updated:</span> June 22nd, 2024</li>
+								<li class="list-group-item"> <span class="fw-bold">Last Updated:</span> Mar 22nd, 2024</li>
 							</ul>
 						</div>
 						
 		
 						<h3 class="mt-4">Collaborators</h3>
 						<ul class="list-group">
-							<li class="list-group-item"><span class="fw-bold">Oluwasanmi Ariyo</span> - Lead Developer</li>
-							<li class="list-group-item"><span class="fw-bold">Collaborator 1</span> - N/A</li>
-							<li class="list-group-item"><span class="fw-bold">Collaborator 2</span> - N/A</li>
+							<li class="list-group-item"><a href="https://www.linkedin.com/in/oluwasanmi-ariyo" style="text-decoration: none;" ><span class="fw-bold">Oluwasanmi Ariyo</span></a> - Lead Developer</li>	
 						</ul>
 					</div>
 				</div>
